@@ -69,8 +69,9 @@ def main():
  
         cv2.putText(img, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_PLAIN, 3,
                     (255, 0, 255), 3)
- 
-        cv2.imshow("Image", img)
+
+        flipped = cv2.flip(img, 1)
+        cv2.imshow("Image", flipped)
         cv2.waitKey(1)
  
  
